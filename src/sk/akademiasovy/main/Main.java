@@ -23,6 +23,11 @@ public class Main {
     triangle triangle1 = new triangle(5,4,3);
     triangle triangle2 = new triangle();
     System.out.println("Perimeter of tiangle is: " + triangle1.getPerimeter());
+    System.out.println("Area of triangel is: " + triangle1.getArea());
+    System.out.println("rect of triangel is: " + triangle1.isRectangular());
+    System.out.println("Exists of triangel: " + triangle1.existsTriangle());
+    System.out.println("Is Sreightsided? " + triangle1.isSreightsided());
+    System.out.println("Is Isosceles? " + triangle1.isIsosceles());
     }
 
 }

@@ -37,12 +37,33 @@ public class triangle {
 
     }
     public boolean existsTriangle(){
-        return false;
+        if(c<(a+b)){
+            return true;
+        }
+        else if(a<(a+c)){
+            return true;
+        }
+        else if(b<(a+c)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
-    public boolean isRovnostranny(){
-        return false;
+    public boolean isSreightsided(){
+        if((a==b) && (b==c)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
-    public boolean isRovnoramenny(){
-        return false;
+    public boolean isIsosceles(){
+        if((a==b) || (b==c) || (c==a)){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
