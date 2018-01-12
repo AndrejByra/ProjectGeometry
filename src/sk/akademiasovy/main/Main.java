@@ -1,8 +1,9 @@
 package sk.akademiasovy.main;
 
-import sk.akademiasovy.geometria.square;
-import sk.akademiasovy.geometria.rectangle;
-import sk.akademiasovy.geometria.triangle;
+import sk.akademiasovy.geometria2d.square;
+import sk.akademiasovy.geometria2d.rectangle;
+import sk.akademiasovy.geometria2d.triangle;
+import sk.akademiasovy.geometria2d.circle;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,10 +25,15 @@ public class Main {
     triangle triangle2 = new triangle();
     System.out.println("Perimeter of tiangle is: " + triangle1.getPerimeter());
     System.out.println("Area of triangel is: " + triangle1.getArea());
-    System.out.println("rect of triangel is: " + triangle1.isRectangular());
+    System.out.println("Rectangle of triangel is: " + triangle1.isRectangular());
     System.out.println("Exists of triangel: " + triangle1.existsTriangle());
     System.out.println("Is Sreightsided? " + triangle1.isSreightsided());
     System.out.println("Is Isosceles? " + triangle1.isIsosceles());
+
+    circle circle1 = new circle(5);
+    circle circle2 = new circle();
+    System.out.println("Area of circle is: " + circle1.getArea());
+    System.out.println("Perimeter of the circle is: " + circle1.getPerimeter());
     }
 
 }
