@@ -4,6 +4,9 @@ import sk.akademiasovy.geometria2d.square;
 import sk.akademiasovy.geometria2d.rectangle;
 import sk.akademiasovy.geometria2d.triangle;
 import sk.akademiasovy.geometria2d.circle;
+import sk.akademiasovy.geometry3d.cube;
+import sk.akademiasovy.geometry3d.block;
+import sk.akademiasovy.geometry3d.sphere;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,9 +34,22 @@ public class Main {
     System.out.println("Is Isosceles? " + triangle1.isIsosceles());
 
     circle circle1 = new circle(5);
-    circle circle2 = new circle();
+
     System.out.println("Area of circle is: " + circle1.getArea());
     System.out.println("Perimeter of the circle is: " + circle1.getPerimeter());
+
+    sphere sphere1 = new sphere(8);
+    System.out.println("Volume of sphere is: " +sphere1.getVolume());
+    System.out.println("Surface of sphere is: " +sphere1.getSurface());
+
+    cube cube1 = new cube(7);
+    System.out.println("Volume of cube is: " +cube1.getVolume());
+    System.out.println("Surface of cube is: " +cube1.getSurface());
+
+
+    block block1 = new block(5,6,9);
+    System.out.println("Volume of rectangular block is: " +block1.getVolume());
+    System.out.println("Surface of rectangular block is: " +block1.getSurface());
     }
 
 }

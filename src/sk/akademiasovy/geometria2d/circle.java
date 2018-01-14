@@ -6,9 +6,7 @@ public class circle implements operations {
     public circle(double r) {
         this.r = r;
     }
-    public calculatePerimeter(){
 
-    }
 
     @Override
     public double getArea() {
